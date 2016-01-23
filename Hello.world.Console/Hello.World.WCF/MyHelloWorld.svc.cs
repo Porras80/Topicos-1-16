@@ -32,7 +32,7 @@ namespace Hello.World.WCF
 
         public string SayHello(string WhoAreYou)
         {
-            string resultado = "Hello" + WhoAreYou;
+            string resultado = string.Format("Hello {0}" + WhoAreYou);
             return resultado;
 
         }

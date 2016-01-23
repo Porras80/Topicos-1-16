@@ -61,12 +61,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyHelloWordl.svc" />
+    <Content Include="MyHelloWorld.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyHelloWordl.svc.cs">
-      <DependentUpon>MyHelloWordl.svc</DependentUpon>
+    <Compile Include="MyHelloWorld.svc.cs">
+      <DependentUpon>MyHelloWorld.svc</DependentUpon>
     </Compile>
     <Compile Include="IHelloWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
