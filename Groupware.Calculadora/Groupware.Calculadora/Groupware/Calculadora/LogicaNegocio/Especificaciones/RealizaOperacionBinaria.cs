@@ -2,19 +2,23 @@
 
 namespace Groupware.Calculadora.LogicaNegocio.Especificaciones
 {
-    internal class RealizaOperacionBinaria
+    public class RealizaOperacionBinaria
     {
         private Operadores miOperador;
         private double operandoDos;
         private double operandoUno;
+    
 
-        public RealizaOperacionBinaria(Operadores miOperador, double operandoUno, double operandoDos)
+        public double RealizaLaOperacionBinaria(Operadores miOperador, double operandoUno, double operandoDos)
         {
-          switch (miOperador)
+            double resultado= 0.0;
+
+            switch (miOperador)
             {
+                
 
                 case Enumerados.Operadores.Suma:
-                    var laSuma = LogicaNegocio.Especificaciones.Suma();
+                    var laSuma = new LogicaNegocio.Especificaciones.Suma();
                     resultado = laSuma.Calculo(operandoUno, operandoDos);
                     break;
             }

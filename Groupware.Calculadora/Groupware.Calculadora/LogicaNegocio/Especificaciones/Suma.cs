@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Groupware.Calculadora.LogicaNegocio.Especificaciones
 {
-    class Suma
+   public class Suma
     {
 
         public double Calculo(double operandoUno, double OperandoDos)
@@ -17,6 +17,6 @@ namespace Groupware.Calculadora.LogicaNegocio.Especificaciones
             Acciones.Sumar operacion = new Acciones.Sumar();
             resultado = operacion.Calcular(operandoUno, OperandoDos);
             return (resultado);
-
+        }
     }
 }

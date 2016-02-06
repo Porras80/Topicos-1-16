@@ -10,7 +10,7 @@ namespace Groupware.Calculadora
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IMiCalculadora
+    public class MiCalculadora : IMiCalculadora
     {
         public string GetData(int value)
         {
@@ -40,7 +40,12 @@ namespace Groupware.Calculadora
             var elOperador = new LogicaNegocio.Especificaciones.ObtenerOperador();
 
             LogicaNegocio.Enumerados.Operadores miOperador = elOperador.ObtenerElOperador(operador);
-            var laOperacion = new LogicaNegocio.Especificaciones.RealizaOperacionBinaria(miOperador, OperandoUno, OperandoDos);
+            var laOperacion = new LogicaNegocio.Especificaciones.RealizaOperacionBinaria();
+
+           resultado = laOperacion.RealizaLaOperacionBinaria(miOperador, OperandoUno, OperandoDos);
+
+
+           
 
             return (resultado);
 
